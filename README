@@ -1,0 +1,26 @@
+This is an archetype for creating a blank Clojure servlet set up for Jetty with auto-reloading on code changes.
+
+To install the archetype, just execute:
+
+mvn install
+
+To create a project, run:
+
+mvn archetype:generate -DarchetypeGroupId=info.beloglazov -DarchetypeArtifactId=clojure-archetype-servlet
+
+To run the generated servlet, type:
+
+mvn jetty:run
+
+To load the servlet, go to http://localhost:8080
+
+The project's code is continuously monitored, and the server is automatically reloaded if the code has been changed.
+
+To create this archetype, I've used information from the following web-sites:
+
+http://jimdowning.wordpress.com/2009/07/30/compojure-maven/
+http://bitbucket.org/jimdowning/hello-mvn-clj
+http://cemerick.com/2010/01/08/sane-web-development-with-compojure-jetty-and-maven/
+https://github.com/yogthos/clojure-maven-examples
+  
+If you have any comments or improvement ideas, please contact me: anton.beloglazov@gmail.com
