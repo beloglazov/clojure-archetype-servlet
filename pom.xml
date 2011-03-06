@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!--
-
-  To create this archetype, I've used information from the following web-sites:
-
-  http://jimdowning.wordpress.com/2009/07/30/compojure-maven/
-  http://bitbucket.org/jimdowning/hello-mvn-clj
-  http://cemerick.com/2010/01/08/sane-web-development-with-compojure-jetty-and-maven/
-  https://github.com/yogthos/clojure-maven-examples
-  
-  If you have any comments or improvement ideas, please contact me: anton.beloglazov@gmail.com
-
--->
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>info.beloglazov</groupId>
+  <groupId>info.beloglazov.clojure-archetype-servlet</groupId>
   <artifactId>clojure-archetype-servlet</artifactId>
   <version>1.0</version>
   <packaging>maven-archetype</packaging>
@@ -48,6 +34,22 @@
   </developers>
 
   <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>  
+  
     <extensions>
       <extension>
         <groupId>org.apache.maven.archetype</groupId>
