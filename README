@@ -1,12 +1,23 @@
 This is an archetype for creating a blank Clojure servlet set up for Jetty with auto-reloading on code changes.
 
-To install the archetype, just execute:
+To install the archetype from the source folder, just execute:
 
 mvn install
 
-To create a project, run:
+To install the downloaded jar file, execute:
 
-mvn archetype:generate -DarchetypeGroupId=info.beloglazov -DarchetypeArtifactId=clojure-archetype-servlet
+mvn install:install-file
+  -Dfile=<path-to-file>
+  -DgroupId=info.beloglazov
+  -DartifactId=clojure-archetype-servlet
+  -Dversion=<version>
+  -Dpackaging=jar
+  
+To create a new project using the archetype, run:
+
+mvn archetype:generate 
+  -DarchetypeGroupId=info.beloglazov 
+  -DarchetypeArtifactId=clojure-archetype-servlet
 
 To run the generated servlet, type:
 
