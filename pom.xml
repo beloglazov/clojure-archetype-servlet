@@ -8,7 +8,7 @@
     <version>7</version>
   </parent>
 
-  <groupId>info.beloglazov.clojure-archetype-servlet</groupId>
+  <groupId>info.beloglazov</groupId>
   <artifactId>clojure-archetype-servlet</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
