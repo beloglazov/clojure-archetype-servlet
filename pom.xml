@@ -85,14 +85,14 @@
   
   <distributionManagement>
     <repository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>sonatype-nexus-snapshots</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </repository>
-    <repository>
       <id>sonatype-nexus-staging</id>
       <name>sonatype-nexus-staging</name>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
     </repository>	
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>sonatype-nexus-snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>	
   </distributionManagement> 
 </project>
