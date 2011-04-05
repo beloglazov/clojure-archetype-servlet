@@ -10,7 +10,7 @@
 
   <groupId>info.beloglazov</groupId>
   <artifactId>clojure-archetype-servlet</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>clojure-archetype-servlet</name>  
@@ -26,8 +26,8 @@
   </licenses>
   
   <scm>
-    <connection>scm:git:git://github.com/beloglazov/clojure-archetype-servlet.git</connection>
-    <developerConnection>scm:git:git://github.com/beloglazov/clojure-archetype-servlet.git</developerConnection>
+    <connection>scm:git:git@github.com:beloglazov/clojure-archetype-servlet.git</connection>
+    <developerConnection>scm:git:git@github.com:beloglazov/clojure-archetype-servlet.git</developerConnection>
     <url>https://github.com/beloglazov/clojure-archetype-servlet</url>
   </scm>
   
