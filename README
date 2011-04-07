@@ -16,7 +16,7 @@ mvn install:install-file
 To create a new project using the archetype, run:
 
 mvn archetype:generate 
-  -DarchetypeGroupId=info.beloglazov 
+  -DarchetypeGroupId=info.beloglazov
   -DarchetypeArtifactId=clojure-archetype-servlet
 
 To run the generated servlet, type:
